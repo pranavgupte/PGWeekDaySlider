@@ -4,7 +4,9 @@ PGWeekDaySlider is a simple and flexible iOS class for presenting any custom vie
 It includes a variety of options for controlling how your slider appears and behaves. 
 User can select multiple days by swiping or taping on it.
 
+
 [![screenshot.png](https://s14.postimg.org/ygfghe869/screenshot.png)](https://postimg.org/image/h3562jcv1/)
+
 
 ##Usage
 ###Basic Setup
