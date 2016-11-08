@@ -7,7 +7,6 @@ User can select multiple days by swiping or taping on it.
 ##Usage
 ###Basic Setup
     
-    ```objective-c
     #import "PGWeekDaySliderView.h"
     
     @property (strong, nonatomic) PGWeekDaySliderView * mySlider;
@@ -23,11 +22,9 @@ User can select multiple days by swiping or taping on it.
     self.resultTextView.layer.masksToBounds = YES;
     
     [self.view addSubview:self.mySlider];
-    ```
     
 #Important methods which will give selected days in name and index.
     
-    ```objective-c
     // selected days by name
     NSMutableArray * daysArrByName = [[NSMutableArray alloc]init];
     daysArrByName = [self.mySlider getAllSelectedDaysByName];
@@ -35,7 +32,7 @@ User can select multiple days by swiping or taping on it.
     // selected days by index
     NSMutableArray * daysArrByNumber = [[NSMutableArray alloc]init];
     daysArrByNumber = [self.mySlider getAllSelectedDaysByNumber];
-    ```
+
 ##Contact
     
     contact me at pranavgupte1308@gmail.com
