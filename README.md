@@ -25,7 +25,7 @@ User can select multiple days by swiping or taping on it.
     [self.view addSubview:self.mySlider];
     ```
     
-#Important methods which will give you selected days in name and index.
+#Important methods which will give selected days in name and index.
     
     ```objective-c
     // selected days by name
@@ -38,4 +38,4 @@ User can select multiple days by swiping or taping on it.
     ```
 ##Contact
     
-    You can contact me at pranavgupte1308@gmail.com
+    contact me at pranavgupte1308@gmail.com
