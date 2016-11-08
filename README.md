@@ -42,6 +42,8 @@ User can select multiple days by swiping or taping on it.
 ```
 ##Customization
 
+In PGWeekDaySliderView.m the color for selection, non-selection and fonts can be changed as below.
+
 ```objective-c
     //set color for week day text/font
     #define PGfontColor colorWithRed:(0/255.0) green:(0/255.0) blue:(0/255.0) alpha:1.0
