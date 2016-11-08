@@ -4,8 +4,10 @@ PGWeekDaySlider is a simple and flexible iOS class for presenting any custom vie
 It includes a variety of options for controlling how your slider appears and behaves. 
 User can select multiple days by swiping or taping on it.
 
-# Usage
-
+##Usage
+###Basic Setup
+    
+    ```objective-c
     #import "PGWeekDaySliderView.h"
     
     @property (strong, nonatomic) PGWeekDaySliderView * mySlider;
@@ -21,9 +23,11 @@ User can select multiple days by swiping or taping on it.
     self.resultTextView.layer.masksToBounds = YES;
     
     [self.view addSubview:self.mySlider];
+    ```
     
-# Important methods which will give you selected days in name and index.
+#Important methods which will give you selected days in name and index.
     
+    ```objective-c
     // selected days by name
     NSMutableArray * daysArrByName = [[NSMutableArray alloc]init];
     daysArrByName = [self.mySlider getAllSelectedDaysByName];
@@ -31,3 +35,7 @@ User can select multiple days by swiping or taping on it.
     // selected days by index
     NSMutableArray * daysArrByNumber = [[NSMutableArray alloc]init];
     daysArrByNumber = [self.mySlider getAllSelectedDaysByNumber];
+    ```
+##Contact
+    
+    You can contact me at pranavgupte1308@gmail.com
