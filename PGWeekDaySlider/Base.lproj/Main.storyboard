@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btI-gb-LN6">
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.55686274509803924" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OP0-m3-ieC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Reset All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6OY-G9-W58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtP-Cp-RXe">
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.792156862745098" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k4K-ce-JuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="Selected Days - Index">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSelectedDaysNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADS-V6-a06"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBu-I7-eel">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Iai-OX-TTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VZ-mE-o09">
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fE2-fF-S0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="Selected Days - Name">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSelectedDaysName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AW9-Fi-uNz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PGWeekDaySlider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-2G-51l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="DjE-wq-gNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HtP-Cp-RXe" firstAttribute="width" secondItem="4VZ-mE-o09" secondAttribute="width" id="0kH-0L-fit"/>
+                            <constraint firstItem="btI-gb-LN6" firstAttribute="top" secondItem="4VZ-mE-o09" secondAttribute="bottom" constant="2" id="2Hm-Kt-6mS"/>
+                            <constraint firstAttribute="trailing" secondItem="HtP-Cp-RXe" secondAttribute="trailing" constant="2" id="2SH-no-Bgi"/>
+                            <constraint firstAttribute="trailing" secondItem="fBu-I7-eel" secondAttribute="trailing" constant="20" id="8r4-IQ-24D"/>
+                            <constraint firstItem="HtP-Cp-RXe" firstAttribute="leading" secondItem="4VZ-mE-o09" secondAttribute="trailing" constant="2" id="DZV-P4-jGI"/>
+                            <constraint firstAttribute="trailing" secondItem="btI-gb-LN6" secondAttribute="trailing" constant="2" id="Pbt-rq-IZF"/>
+                            <constraint firstItem="4VZ-mE-o09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="RGl-ve-kJ3"/>
+                            <constraint firstItem="btI-gb-LN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="U1L-Qi-vEM"/>
+                            <constraint firstItem="fBu-I7-eel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Wic-zb-6Z2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="btI-gb-LN6" secondAttribute="bottom" constant="2" id="fBX-Ei-X3l"/>
+                            <constraint firstAttribute="trailing" secondItem="lv8-2G-51l" secondAttribute="trailing" constant="16" id="faA-i8-cNs"/>
+                            <constraint firstItem="lv8-2G-51l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="gIC-T0-cuq"/>
+                            <constraint firstItem="4VZ-mE-o09" firstAttribute="top" secondItem="fBu-I7-eel" secondAttribute="bottom" constant="44" id="gSK-1F-YME"/>
+                            <constraint firstItem="lv8-2G-51l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="qct-WZ-xhb"/>
+                            <constraint firstItem="btI-gb-LN6" firstAttribute="top" secondItem="HtP-Cp-RXe" secondAttribute="bottom" constant="2" id="s4Y-G6-C88"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="fBu-I7-eel" id="hEv-LS-IUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.625" y="119.36619718309859"/>
+        </scene>
+    </scenes>
+</document>
