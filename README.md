@@ -26,7 +26,8 @@ User can select multiple days by swiping or taping on it.
 ```
     
 #Important methods which will give selected days in name and index.
-    
+
+```objective-c    
     // selected days by name
     NSMutableArray * daysArrByName = [[NSMutableArray alloc]init];
     daysArrByName = [self.mySlider getAllSelectedDaysByName];
@@ -34,6 +35,7 @@ User can select multiple days by swiping or taping on it.
     // selected days by index
     NSMutableArray * daysArrByNumber = [[NSMutableArray alloc]init];
     daysArrByNumber = [self.mySlider getAllSelectedDaysByNumber];
+```
 
 ##Contact
     
