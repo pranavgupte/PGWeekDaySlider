@@ -39,4 +39,4 @@ User can select multiple days by swiping or taping on it.
 
 ##Contact
     
-    contact me at [pranavgupte1308@gmail.com]
+    contact me at pranavgupte1308@gmail.com
