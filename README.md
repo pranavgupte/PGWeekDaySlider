@@ -56,5 +56,9 @@ In PGWeekDaySliderView.m the color for selection, non-selection and fonts can be
 ```
 
 ##Contact
-    
-    contact me at pranavgupte1308@gmail.com
+
+## Contact
+
+Pranav Gupte
+* https://github.com/pranavgupte
+* pranavgupte1308@gmail.com
