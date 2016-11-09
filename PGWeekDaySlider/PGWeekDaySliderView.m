@@ -220,6 +220,8 @@
             isSunselected = YES;
         }
     }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateDays" object:nil];
 }
 
 #pragma mark - method for swipe gesture
@@ -234,17 +236,23 @@
         
         [self resetAllDays];
         
+        [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateDays" object:nil]; //auto update selected days text
+        
     }else if (recognizer.state == UIGestureRecognizerStateEnded) {
         
         CGPoint end = [recognizer locationInView:recognizer.view];
         
         endPoint = end.x;
         
+         [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateDays" object:nil]; //auto update selected days text
+        
     }else if (recognizer.state == UIGestureRecognizerStateChanged) {
         
         CGPoint moving = [recognizer locationInView:recognizer.view];
         
         movingPoint = moving.x;
+        
+        NSLog(@"%f",movingPoint);
         
         if (movingPoint >= 0 && movingPoint <= width) {
             
@@ -281,6 +289,8 @@
             sunLbl.backgroundColor = [UIColor PGselectedBGColor];
             isSunselected = YES;
         }
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateDays" object:nil]; //auto update selected days text
     }
 }
 
@@ -288,13 +298,15 @@
 
 -(void)resetAllDays{
     
-    monLbl.backgroundColor = [UIColor PGbgColor];
-    tueLbl.backgroundColor = [UIColor PGbgColor];
-    wedLbl.backgroundColor = [UIColor PGbgColor];
-    thuLbl.backgroundColor = [UIColor PGbgColor];
-    friLbl.backgroundColor = [UIColor PGbgColor];
-    satLbl.backgroundColor = [UIColor PGbgColor];
-    sunLbl.backgroundColor = [UIColor PGbgColor];
+    //reset all label background color 
+    
+    for (UILabel * lbl in self.subviews) {
+        
+        if ([lbl isKindOfClass:[UILabel class]]) {
+            
+            lbl.backgroundColor = [UIColor PGbgColor];
+        }
+    }
     
     isMselected = NO;
     isTselected = NO;
@@ -346,9 +358,7 @@
 }
 
 -(NSMutableArray *)replaceNamesInArray:(NSMutableArray *)daysArr{
-    
-    //NSMutableArray * replaceArr = [[NSMutableArray alloc]init];
-    
+
     for (int i = 0; i < [daysArr count]; i ++) {
         
         if      ([[daysArr objectAtIndex:i] isEqualToString:@"M"])

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getSelectedDaysName:) name:@"UpdateDays" object:nil];
     self.mySlider = [[PGWeekDaySliderView alloc]initWithFrame:CGRectMake(20, 215, 280, 40)];
     
     self.mySlider.layer.borderColor = [UIColor blackColor].CGColor;

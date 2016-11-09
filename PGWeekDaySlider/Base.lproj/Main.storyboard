@@ -65,7 +65,7 @@
                                     <action selector="getSelectedDaysName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AW9-Fi-uNz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PGWeekDaySlider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-2G-51l">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PGWeekDaySlider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-2G-51l">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="DjE-wq-gNc"/>
                                 </constraints>
